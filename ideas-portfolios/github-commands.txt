@@ -1,0 +1,26 @@
+Git New project
+Create the repository in git hub
+git init
+git add .
+git commit -am "First commit"
+git remote add origin https://github.com/anngelRuiz/portfolio.git    Fatal:remote origin already exist
+git push -u origin master
+
+haceer cmomit
+git add .
+git commit -am "second commit"
+git remote add origin https://github.com/anngelRuiz/chat-test.git
+git push -u origin master
+
+git remote add origin <url_repositorio_github>
+
+https://github.com/anngelRuiz/chat-test.git
+git push origin master
+git push origin https://github.com/anngelRuiz/chat-test.git
+
+
+clonar
+git clone url
+
+jalar
+git pull
