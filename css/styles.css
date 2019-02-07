@@ -30,6 +30,10 @@ transition: ;
   font-family: 'Alef', sans-serif;
 }
 
+.active {
+  color: #47acde!important;
+  border-bottom: 1px solid #1777d1;
+}
 
 /* Navbar */
 .navbar {
@@ -62,11 +66,7 @@ transition: ;
   transition: border-bottom 0.3s ease; 
 }
 
-.navbar-default .navbar-nav > li > a >i{
-  color: #4fc5b5;
-}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover {
   color: #4fc5b5;
   border-bottom: 1px solid #1777d1;
 }
@@ -117,7 +117,7 @@ transition: ;
   color: #333;
 }
 
-.navbar.solid  .navbar-nav > li > a:hover, .navbar.solid  .navbar-nav > li > a:active, .navbar.solid  .navbar-nav > li > a:focus {
+.navbar.solid  .navbar-nav > li > a:hover {
   color: #4fc5b5;
   border-bottom: 1px solid #1777d1
 }
