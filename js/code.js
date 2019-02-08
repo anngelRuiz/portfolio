@@ -1,26 +1,12 @@
 $(document).ready(function () {
-
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 80) {
-    //         $('.navbar').addClass('solid');
-    //     } else {
-    //         $('.navbar').removeClass('solid');
-    //     }
-
-    //     if ($(this).scrollTop() >= $('#section-work').position().top) {
-    //         yourActionHere();
-    //     }
-    // });
-
-
+    var scrollPos = $(document).scrollTop();
+    detectScroll(scrollPos);
 
     $(document).on("scroll", onScroll);
 
     function onScroll(event) {
-        var scrollPos = $(document).scrollTop();
-
-        scrollPos > 80 ? $('.navbar').addClass('solid') : $('.navbar').removeClass('solid');
-
+        scrollPos = $(document).scrollTop();
+        detectScroll(scrollPos);
         $('#nav ul li a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
@@ -34,23 +20,23 @@ $(document).ready(function () {
         });
     }
 
-    // section - home
-    // section - work
-    // about - me
-    // section - contact
-
     $("#nav ul li a[href^='#']").on('click', function (e) {
         e.preventDefault();
         var hash = this.hash;
         var scrollValue = hash != "#section-home" ? scrollValue = $(hash).offset().top : 0;
 
-        $('html, body').stop().animate({ scrollTop: scrollValue }, 700, function () {
+        $('html, body').stop().animate({ scrollTop: scrollValue }, 1200, function () {
             // window.location.hash = hash;
         });
 
         $('#nav ul li a').not(this).removeClass('active');
         $(this).addClass('active');
     });
+
+    function detectScroll() {
+        scrollPos > 80 ? $('.navbar').addClass('solid') : $('.navbar').removeClass('solid');
+    }
+
 });
 
 console.log("&&                                                                      &");

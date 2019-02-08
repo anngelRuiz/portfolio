@@ -32,12 +32,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="font-family: 'Courgette', cursive;">Angel's
+                <a class="navbar-brand" href="#section-home" style="font-family: 'Courgette', cursive;">Angel's
                     Portfolio
-                    <img src="./images/letter-a.png" width="27px" height="27px" style="float: left; margin: -2px 7px 0 0; ">
+                    <img src="./images/letter-a.png" width="27px" height="27px" style="float: left; margin: -2px 12px 0 0; ">
                 </a>
             </div>
-            <div id="navbar" class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#section-home">Home</a></li>
                     <li><a href="#section-work">Work</a></li>
@@ -214,30 +214,66 @@
     </section>
 
 
+    <section id="section-contact">
+        <div class="container-fluid font-text">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="contact-box">
+                        <div class="col-md-8 contact-details">
+                            <h3>CONTACT ME</h3>
+                            <h4 style="color: #818181">Send me a message</h4>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your name">
+                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                    <textarea type="textarea" class="form-control" required="" minlength="10" name="comments"
+                                        placeholder="Comments"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="background-color: #ff4f7b; border-color: #ff4f7b;">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-md-4 contact-bg">
+                            <div id="style-selector-control" class="map-control" style="display:none;">
+                                <select id="style-selector" class="selector-control">
+                                    <option value="default">Default</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="night" selected="selected">Night mode</option>
+                                    <option value="retro">Retro</option>
+                                    <option value="hiding">Hide features</option>
+                                </select>
+                            </div>
+                            <div id="map" class="map-container z-depth-1-half" style="height: 500px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- footer -->
     <div class="footer font-title">
         <div class="container">
-            <div class="row ">
+            <!-- <div class="row ">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
                     <div class="ft-logo"><img src="https://easetemplate.com/free-website-templates/cointrade/images/logo.png"
                             alt=""></div>
                 </div>
+            </div> -->
+            <div class="row text-center" style="margin: 30px 0;">
+                <a href='#'><i class="fa fa-facebook  fa-2x fa-fw"></i></a>
+                <a href='#'><i class="fa fa-codepen fa-2x fa-fw"></i></a>
+                <a href='#'><i class="fa fa-instagram fa-2x fa-fw"></i></a>
+                <a href='#'><i class="fa fa-twitter fa-2x fa-fw"></i></a>
+                <a href='#'><i class="fa fa-envelope fa-2x fa-fw"></i></a>
+                <a href='#'><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
+                <a href='#'><i class="fa fa-github fa-2x fa-fw"></i></a>
             </div>
-            <div class="row text-center" style="margin: 50px 0;">
-                <a href='#'><i class="fa fa-twitch fa-3x fa-fw"></i></a>
-                <a href='#'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
-                <a href='#'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
-                <a href='#'><i class="fa fa-youtube-play fa-3x fa-fw"></i></a>
-                <a href='#'><i class="fa fa-rss fa-3x fa-fw"></i></a>
-                <a href='#'><i class="fa fa-vine fa-3x fa-fw"></i></a>
-                <a href='#'><i class="fa fa-flickr fa-3x fa-fw"></i></a>
-                <a href='#'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
-            </div>
-            <div class="row ">
+            <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
                     <div class="tiny-footer">
-                        <p>Copyright © All Rights Reserved 2020 | Template Design & Development by <a href="https://easetemplate.com/downloads/bitcoin-cryptocurrency-website-template-amazing-design "
-                                target="_blank" class="copyrightlink">EaseTemplate</a></p>
+                        <p>Copyright © All Rights Reserved 2020 | BY <a href="#" target="_blank" class="font-text">anngelRuiz</a></p>
                     </div>
                 </div>
                 <!-- /. tiny-footer -->
@@ -246,13 +282,20 @@
     </div>
     <!-- /.footer -->
 
-    <!-- JQuery CDN-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap JS CDN-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <!-- code -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="dependencies/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="dependencies/popper/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Code -->
     <script src="./js/code.js"></script>
+    <!-- Google Maps Code -->
+    <script src="./js/google-maps.js"></script>
+    <!-- Google Maps api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1Y_oKaNekwJ0SQbxCSlrfMpQzKAGIkwE&callback=initMap"
+        async defer></script>
 </body>
 
 </html>
