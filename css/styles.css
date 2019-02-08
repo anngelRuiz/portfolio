@@ -479,6 +479,27 @@ section#about-me img {
   z-index: 10;
 }
 
+section#about-me .about-words-box {
+  
+}
+
+section#about-me .about-words-box .about-words{
+  padding: 5%;
+  height: 500px;
+  background-image: linear-gradient(to right top, #161515, #1c1b1b, #222121, #282727, #2e2d2d);
+
+  color:#fff;
+}
+
+section#about-me .about-words-box .about-bg {
+  height: 500px;
+  background-color: #164d81;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* About me */
+
 section#section-contact { 
   background-image: linear-gradient(to right top, #051937, #00476f, #007c9e, #00b3bc, #12ebc5);
   padding: 3%;
